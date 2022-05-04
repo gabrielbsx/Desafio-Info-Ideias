@@ -13,7 +13,7 @@
     function rangePrimos(int $inicio, int $fim): array {
         $primos = [];
 
-        if ($inicio < 0 || $fim > $inicio) {
+        if ($inicio < 0 || $fim < $inicio) {
             return $primos;
         }
 
