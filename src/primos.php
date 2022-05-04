@@ -22,6 +22,21 @@
         return $primos;
     }
 
+    function printPrimos(array $primos): void {
+        $printed = 'Array [';
+        foreach ($primos as $primo) {
+            $printed .= "$primo,";
+        }
+
+        $printed = rtrim($printed, ',');
+        $printed .= ']';
+        echo($printed);
+    }
+
     //Apenas valores primos
     $primos = rangePrimos(1, 100);
-    print_r($primos);
+
+    printPrimos($primos);
+    
+    //print_r($primos);
+
