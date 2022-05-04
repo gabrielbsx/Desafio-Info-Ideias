@@ -39,7 +39,7 @@
 
     //Apenas valores primos
     //início deverá ser um número inteiro maior ou igual a 0 e fim um número inteiro maior que início
-    $primos = rangePrimos(-1, 100);
+    $primos = rangePrimos(10, 29);
 
     printPrimos($primos);
     //print_r($primos);
