@@ -53,5 +53,5 @@
         $data = (int) explode(' ', $entrada)[1];
 
         //resultado da conversão
-        echo "$entrada = " . seculoAno($data) . "\n";
+        echo("$entrada = " . seculoAno($data) . "\n");
     }
