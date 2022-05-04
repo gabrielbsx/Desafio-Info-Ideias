@@ -38,9 +38,16 @@
     }
 
     function printSorteio(array $sorteio): void {
-        if (count($sorteio) > 2) {
+        $quantidade = count($sorteio);
+
+        if ($quantidade > 2) {
             $sorteio = implode(', ', $sorteio);
             echo("Os números que não se repetem são o $sorteio\n");
+        } else if ($quantidade == 1) {
+            $sorteio = implode(' e ', $sorteio);
+            echo("O número que não se repete é $sorteio\n");
+        } else if ($quantidade == 0) {
+            echo("Não há números que não se repetem\n");
         } else {
             $sorteio = implode(' e ', $sorteio);
             echo("Os números que não se repetem são o $sorteio\n");
