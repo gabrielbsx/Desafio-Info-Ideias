@@ -47,7 +47,11 @@
     //entradas
     $entradas = ['Ano 1905', 'Ano 1700'];
 
+    //rodar testes
     foreach ($entradas as $entrada) {
+        //pegar o ano e efetuar casting para inteiro
         $data = (int) explode(' ', $entrada)[1];
+
+        //resultado da conversão
         echo "$entrada = " . seculoAno($data) . "\n";
     }
