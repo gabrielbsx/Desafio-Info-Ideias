@@ -13,7 +13,7 @@
     function rangePrimos(int $inicio, int $fim): array {
         $primos = [];
 
-        for ($i = $inicio; $i <= $fim; $i++) {
+        for ($i = $inicio + 1; $i < $fim; $i++) {
             if (isPrimo($i)) {
                 $primos[] = $i;
             }
@@ -37,6 +37,5 @@
     $primos = rangePrimos(1, 100);
 
     printPrimos($primos);
-    
     //print_r($primos);
 
